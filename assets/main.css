@@ -21,3 +21,12 @@ body {
   padding: 0 20px 20px 20px;
   border: 20px solid #B22222;
 }
+.image-container {
+  display: flex
+  justify-content:center;
+  width: 1000px;
+  height: 1500px;
+  background-image: url("./twinpeaks.png");
+  background-position: center;
+  position: relative
+}
