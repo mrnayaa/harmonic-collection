@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: rgb(164, 42, 4); 
+    color: rgb(164, 42, 4); 
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+
+      #canalstreet {
+        position: relative;
+        overflow: hidden;
+        width: 600px;
+        height: 120px;
+        margin-top: 0%;
+        margin-left: 5%;
+      }
+
+      #eightyfirst {
+        position:relative;
+        overflow: hidden;
+        width: 600px;
+        height: 160px;
+        margin-top: 0%;
+        margin-left: 10%;
+      }
+
+      #thankyou {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 350px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #twentythird {
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        height: 150px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #pizza {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 350px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #jfk {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 350px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #redprints {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 350px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #atlantic {
+        position: relative;
+        overflow: hidden;
+        width: 250px;
+        height: 150px;
+        margin-top: 0%;
+        margin-left: 10%;
+      }
+
+      #streetsigns {
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #firestreets {
+        position: relative;
+        overflow: hidden;
+        width: 250px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 5%;
+      }
+
+      #arrowstreet {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #romantic {
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #apple {
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #balloons {
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 200px;
+        margin-top: 0%;
+        margin-left: 5%;
+      }
+
+      #gummybears {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #pink {
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      #bagel {
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 5%;
+      }
+
+      #bluebanisters {
+        position: relative;
+        overflow: hidden;
+        width: 230px;
+        height: 230px;
+        margin-top: 0%;
+        margin-left: 8%;
+      }
+
+      #cart {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 300px;
+        margin-top: 0%;
+        margin-left: 1%;
+      }
+
+      #cake {
+        position: relative;
+        overflow: hidden;
+        width: 270px;
+        height: 270px;
+        margin-top: 0%;
+        margin-left: 5%;
+      }
+
+      #trafficlights {
+        position: relative;
+        overflow: hidden;
+        width: 270px;
+        height: 270px;
+        margin-top: 0%;
+        margin-left: 5%;
+      }
+
+      #lipstick {
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 350px;
+        margin-top: 0%;
+        margin-left: 0%;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s;  /* Add a smooth transition effect */
+      }
+      
+      .image-container:hover img {
+        transform: scale(1.2); /* Scale the image to 120% of its original size on hover */
+      }

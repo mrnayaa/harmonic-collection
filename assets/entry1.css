@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: rgb(164, 42, 4); 
+    color: rgb(164, 42, 4); 
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+
+  .background-container {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .background-container:nth-child(1) {
+    position: relative;
+    background-image: url("./sweaterweather.png");
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+  
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    background-color: rgba(164, 42, 4, 0.8);
+    color: #AFE1AF;
+    padding: 20px;
+    width: 400px;
+    height: 750px;
+  }
+  
+  .text-overlay h1
+  {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: center;
+  }
+
+  .text-overlay p
+  {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: left;
+  }
+
+  .text-overlay details
+  {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: left;
+  }
+
+  .text-overlay li
+  {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: left;
+  }
+
+  .text-overlay ul
+  {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-align: left;
+  }

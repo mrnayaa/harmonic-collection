@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    text-decoration: rgb(164, 42, 4); 
+    color: rgb(164, 42, 4); 
+  }
+
+  a:hover {
+    text-decoration: underline; 
+  }
+
+  #container1 {
+    width: 1440px; /* Set the container's width */
+    height: 500px; /* Set the container's height */
+    background-color: rgb(164, 42, 4); /* Set a background color for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image1 {
+    width: 100%;
+    height: 100%;
+    background-image: url('blackcat.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 2%;
+    top: 2%;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+    background-image: url('yellowflowers.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 0%;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image1:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+#image2:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+#container2 {
+    width: 1440px; /* Set the container's width */
+    height: 900px; /* Set the container's height */
+    background-color: rgb(164, 42, 4); /* Set a background color for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image3 {
+    width: 100%;
+    height: 100%;
+    background-image: url('blackmirror.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image4 {
+    width: 100%;
+    height: 100%;
+    background-image: url('candle.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image5 {
+    width: 100%;
+    height: 100%;
+    background-image: url('wine.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image3:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+#image4:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+#image5:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+#container3 {
+    width: 1440px; /* Set the container's width */
+    height: 500px; /* Set the container's height */
+    background-color: rgb(164, 42, 4); /* Set a background color for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image6 {
+    width: 100%;
+    height: 100%;
+    background-image: url('butter.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image7 {
+    width: 100%;
+    height: 100%;
+    background-image: url('knife.png'); /* Default image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease; /* Smooth transition for image change */
+}
+
+#image6:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+#image7:hover {
+    background-image: url('redbackground.png'); /* Image to display on hover */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
