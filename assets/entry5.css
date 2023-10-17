@@ -11,6 +11,20 @@ a {
     text-decoration: underline; 
   }
 
+  a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a img {
+    border: none; 
+    border-radius: 0px; 
+}
+
+a:hover {
+    border-color: #0056b3; 
+}
+
       #canalstreet {
         position: relative;
         overflow: hidden;

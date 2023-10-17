@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width"></meta>
+   <link
+  href="https://fonts.googleapis.com/css?family=Open+Sans"
+  rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+     <title>composition</title>
+     <link href="../assets/entry6.css" rel="stylesheet">
+     <head>
+   <body>
+    <div class="image-gallery">
+        <div class="image">
+          <img src="../assets/blackcat.png" alt="Image 1" id="image1">
+          <div class="overlay" id="overlay1">
+            <p>description</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="image-gallery">
+        <div class="image">
+          <img src="../assets/butter.png" alt="Image 2" id="image2">
+          <div class="overlay" id="overlay2">
+            <p>description</p>
+          </div>
+        </div>
+    </div>
+ 
+    <div class="image-gallery">
+        <div class="image">
+          <img src="../assets/yellowflowers.png" alt="Image 3" id="image3">
+          <div class="overlay" id="overlay2">
+            <p>description description description description description description
+                description description description description description description 
+                description description description description description description 
+                description description description description description description 
+                description description description description description description 
+                description description description description description description 
+                description description description description description description 
+                description description description description description description  </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="../assets/butter.png" alt="Click to reveal text">
+        <div class="hidden-text">the symbol</div>
+    </div>
+
+    <script>
+        // Wait for the DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const imageContainer = document.querySelector('.image-container');
+            const hiddenText = document.querySelector('.hidden-text');
+
+            imageContainer.addEventListener('click', () => {
+                hiddenText.style.display = 'block';
+            });
+        });
+    </script>
+
+</body>
+</head>
+</html>

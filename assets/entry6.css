@@ -1,0 +1,48 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image {
+    position: relative;
+    margin: 10px;
+  }
+  
+  .image img {
+    width: 400px;
+    height: 250px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(164, 42, 4, 0.8);
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image:hover .overlay {
+    opacity: 1;
+  }
+
+  .hidden-text {
+    display: none;
+}
+
+.image-container {
+    position: relative;
+}
+
+.hidden-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background */
+    padding: 10px;
+    border: 1px solid #333;
+}

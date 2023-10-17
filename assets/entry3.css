@@ -39,10 +39,10 @@ a:hover {
 
 .text-overlay-container {
     position: absolute;
-    top: 50%; 
+    top: 40%; 
     left: 70%; 
     transform: translate(-50%, -50%);
-    color: 	#D2042D; 
+    color: 	#880808; 
     padding: 0px;
     text-align: left; 
     width: 400px;
@@ -51,7 +51,7 @@ a:hover {
 }
 
 .text-overlay-container p {
-    font-size: 18px;
+    font-size: 24px;
     margin: 5px;
     font-family: 'Libre Baskerville', serif;
     line-height: 2;
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .text-overlay-container ol {
-    font-size: 18px;
+    font-size: 24px;
     margin: 5px;
     font-family: 'Libre Baskerville', serif;
     line-height: 2;
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .text-overlay-container li {
-    font-size: 18px;
+    font-size: 24px;
     margin: 5px;
     font-family: 'Libre Baskerville', serif;
     line-height: 2;
