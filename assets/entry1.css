@@ -7,8 +7,8 @@ body {
     position: absolute;
     text-decoration: rgb(164, 42, 4); 
     color: rgb(164, 42, 4); 
-    top: 90%;
-    left: 20%;
+    top: 115%;
+    left: 8%;
     transform: translate(-50%, -50%);
     text-align: left;
   }
@@ -26,12 +26,12 @@ body {
 .image-background {
     width: 100%;
     height: 100%;
-    background-image: url('.sweaterweather.png'); /* Set the image path */
+    background-image: url('.about.png'); /* Set the image path */
     /* Additional styling for the image container */
 }
 
 .image-container:nth-child(2) .image-background {
-    background-image: url('.sweaterweather.png'); 
+    background-image: url('.about.png'); 
     width: 100%;
     height: auto; /* Set the desired height */
     background-size: cover;
@@ -45,15 +45,15 @@ body {
   
   .text-overlay {
     position: absolute;
-    top: 50%;
-    left: 80%;
+    top: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    text-align: left;
+    text-align: center;
     background-color: rgba(164, 42, 4, 0.8);
     color: #AFE1AF;
     padding: 20px;
-    width: 400px;
-    height: 750px;
+    width: 800px;
+    height: 500px;
   }
   
   .text-overlay h1
