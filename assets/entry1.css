@@ -4,30 +4,44 @@ body {
   }
 
   a {
+    position: absolute;
     text-decoration: rgb(164, 42, 4); 
     color: rgb(164, 42, 4); 
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
   }
   
-  a:hover {
-    text-decoration: underline; 
-  }
-
-  .background-container {
+  .image-container {
     width: 100%;
-    height: 100vh;
+    height: auto; /* Set the desired height */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .background-container:nth-child(1) {
     position: relative;
-    background-image: url("./sweaterweather.png");
+    overflow: hidden;
+}
+
+.image-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('.sweaterweather.png'); /* Set the image path */
+    /* Additional styling for the image container */
+}
+
+.image-container:nth-child(2) .image-background {
+    background-image: url('.sweaterweather.png'); 
+    width: 100%;
+    height: auto; /* Set the desired height */
     background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
-    width: 100vw;
-  
-  }
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;/* Set the image path for the second container */
+    /* Additional styling for the second image container */
+}
+
   
   .text-overlay {
     position: absolute;

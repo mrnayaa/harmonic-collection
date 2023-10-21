@@ -3,8 +3,6 @@ body {
   padding: 0;
 }
 a {
-  /* width: 100%;
-  height: 100%; */
   text-decoration: #a42a04; 
   color: #a42a04; 
 }
@@ -15,7 +13,34 @@ a {
 
 #photobackground {
   position: absolute;
+  width: 1440px;
+  height: auto;
 }
+
+#scrollButton {
+  position: absolute;
+  display: flex;
+  background: none;
+  border: none; /* Remove the button border */
+  padding: 0;
+  left: 45%;
+  top: 40%;
+}
+
+#scrollButton img {
+  width: 100px;
+  height: 100px; /* Adjust the height of the image */
+}
+
+/* Style for the sections */
+.scroll-target {
+  height: 1000vh; /* Set the height to control the scrolling distance */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #a42a04; /* Set a background color for visibility */
+}
+
 
 .image-container {
   display: flex;
@@ -27,7 +52,9 @@ a {
   align-content: center;
   justify-content: center;
   gap: 50px;
-  top: 0%;
+  margin: 0;
+  padding: 0;
+  top: 130%;
   left: 40%;
   transform: translate(-50%, 50%);/* Adjust vertical spacing between wrapped items */
 }
@@ -111,25 +138,39 @@ transition: transform 0.3s ease; /* Add a transition for smooth animation */
   background-repeat: no-repeat;
 }
 
-.text-container h1 {
+.text-overlay {
   position: absolute;
+  display: inline-block;
   top: 30%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   color: 	#C1E1C1; 
   padding: 0%; 
-  width: 800px;
-  height: 400px;
+  width: 1000px;
+  height: 250px;
 }
 
-.text-container h1 {
-  font-size: 60px;
-  margin: 5px;
-  font-family: 'Cinzel Decorative', bold;
-  line-height: 2;
-  letter-spacing: 2;
-  text-align: left;
+.fade-text {
+  font-size: 38px;
+  color: #C1E1C1; 
+  font-family: 'Cinzel Decorative', bold;/* Text color */
+  position: relative;
+  display: inline-block;
+  animation: fadeInOut 5s ease infinite;;
 }
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0; /* Start with no opacity (invisible) */
+  }
+  50% {
+      opacity: 1; /* Fully visible */
+  }
+  100% {
+      opacity: 0; /* Fade out again (invisible) */
+  }
+}
+
 
 
 
