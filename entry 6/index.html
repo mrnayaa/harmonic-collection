@@ -16,59 +16,28 @@
 
      <title>composition</title>
      <link href="../assets/entry6.css" rel="stylesheet">
-     <head>
    <body>
-    <div class="image-gallery">
-        <div class="image">
-          <img src="../assets/blackcat.png" alt="Image 1" id="image1">
-          <div class="overlay" id="overlay1">
-            <p>description</p>
-          </div>
-        </div>
-    </div>
-
-    <div class="image-gallery">
-        <div class="image">
-          <img src="../assets/butter.png" alt="Image 2" id="image2">
-          <div class="overlay" id="overlay2">
-            <p>description</p>
-          </div>
-        </div>
-    </div>
- 
-    <div class="image-gallery">
-        <div class="image">
-          <img src="../assets/yellowflowers.png" alt="Image 3" id="image3">
-          <div class="overlay" id="overlay2">
-            <p>description description description description description description
-                description description description description description description 
-                description description description description description description 
-                description description description description description description 
-                description description description description description description 
-                description description description description description description 
-                description description description description description description 
-                description description description description description description  </p>
-          </div>
-        </div>
-    </div>
+    <div id="background-container">
+        <img src="../assets/wallpaper.png" alt="collage" id="my-image">
 
     <div class="image-container">
-        <img src="../assets/butter.png" alt="Click to reveal text">
-        <div class="hidden-text">the symbol</div>
+        <div class="image">
+            <img src="../assets/detstvoo.png" alt="Image 1" class="image" id="one">
+        </div>
+        <div class="image">
+            <img src="../assets/sovietdetstvo.png" alt="Image 2" class="image" id="two">
+        </div>
+        <div class="image">
+            <img src="../assets/detstvoo.png" alt="Image 3" class="image" id="three">
+        </div>
+        <div class="image">
+            <img src="../assets/detstvoo.png" alt="Image 4" class="image" id="four">
+        </div>
+        <div class="image">
+            <img src="../assets/detstvoo.png" alt="Image 5" class="image" id="five">
+        </div>
+    </div>
     </div>
 
-    <script>
-        // Wait for the DOM to be fully loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            const imageContainer = document.querySelector('.image-container');
-            const hiddenText = document.querySelector('.hidden-text');
-
-            imageContainer.addEventListener('click', () => {
-                hiddenText.style.display = 'block';
-            });
-        });
-    </script>
-
 </body>
-</head>
 </html>
