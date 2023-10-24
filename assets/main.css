@@ -130,6 +130,15 @@ transition: transform 0.3s ease; /* Add a transition for smooth animation */
   margin-left: 0%;
 }
 
+#childhood {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
 #background-container {
   background-color: a42a04; 
   background-position: relative;

@@ -2,16 +2,6 @@ body {
     margin: 0;
     padding: 0;
   }
-
-  a {
-    position: absolute;
-    text-decoration: rgb(164, 42, 4); 
-    color: rgb(164, 42, 4); 
-    top: 115%;
-    left: 8%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-  }
   
   .image-container {
     width: 100%;
@@ -42,10 +32,47 @@ body {
     /* Additional styling for the second image container */
 }
 
+.button {
+    display: inline-block;
+    padding: 20px 20px;
+    color: #fff;
+    width: 100%;
+    height: 100%
+    text-decoration: none; 
+    border: none;
+    cursor: pointer;
+    position: absolute; 
+    transform: translate(0, 0); 
+    z-index: 20; 
+    background-size: cover; 
+    background-position: center;
+    background-position: center; 
+    transition: transform 0.3s; 
+}
+
+#buttonleft {
+    top: 2%;
+    left: 2%;
+    width: 3%;
+    height: 3%;
+    background-image: url('buttonhome.png');
+}
+
+#buttonright {
+    top: 2%;
+    right: 2%;
+    width: 3%;
+    height: 3%;
+    background-image: url('buttondesignred.png');
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
   
   .text-overlay {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -53,45 +80,51 @@ body {
     color: #AFE1AF;
     padding: 20px;
     width: 800px;
-    height: 500px;
+    height: 650px;
+    font-family: 'Libre Baskerville', serif;
   }
   
   .text-overlay h1
   {
   font-size: 30px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-align: center;
+  font-family: 'Libre Baskerville', serif;
   }
 
   .text-overlay p
   {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'Libre Baskerville', serif;
   }
 
   .text-overlay details
   {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'Libre Baskerville', serif;
   }
 
   .text-overlay li
   {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'Libre Baskerville', serif;
   }
 
   .text-overlay ul
   {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
+  font-family: 'Libre Baskerville', serif;
   }

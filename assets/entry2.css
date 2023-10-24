@@ -3,14 +3,43 @@ body {
     padding: 0;
   }
 
-a {
-    text-decoration: rgb(164, 42, 4); 
-    color: rgb(164, 42, 4); 
-  }
+  .button {
+    display: inline-block;
+    padding: 20px 20px;
+    color: #fff;
+    width: 100%;
+    height: 100%
+    text-decoration: none; 
+    border: none;
+    cursor: pointer;
+    position: absolute; 
+    transform: translate(0, 0); 
+    z-index: 20; 
+    background-size: cover; 
+    background-position: center;
+    background-position: center; 
+    transition: transform 0.3s; 
+}
 
-  a:hover {
-    text-decoration: underline; 
-  }
+#buttonleft {
+    top: 2%;
+    left: 2%;
+    width: 3%;
+    height: 5%;
+    background-image: url('buttonhomeblack.png');
+}
+
+#buttonright {
+    top: 2%;
+    right: 2%;
+    width: 3%;
+    height: 5%;
+    background-image: url('buttondesignblack.png');
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
 
   #container1 {
     width: 1440px; /* Set the container's width */
