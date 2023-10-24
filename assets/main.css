@@ -46,17 +46,18 @@ a {
 .image-container {
   display: flex;
   position: absolute;
-  width: 1440px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   /* height: 900px; */
-  flex-wrap: wrap; /* Enable item wrapping when there's not enough space */
+  flex-wrap: wrap; 
+  column-gap: 2%;/* Enable item wrapping when there's not enough space */
   align-content: center;
   justify-content: center;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
-  top: 130%;
+  gap: 3%;
+  top: 70%;
   left: 40%;
+  right: 20%;
+  bottom: 0%;
   transform: translate(-50%, 50%);/* Adjust vertical spacing between wrapped items */
 }
 
