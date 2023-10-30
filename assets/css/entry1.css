@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/nyctwo.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 3% 3%; /* Adjust padding for responsiveness */
+    color: #fff;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0, 0);
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+  }
+  
+  #buttonleft {
+    top: 2%;
+    left: 2%;
+    width: auto;
+    height: auto;
+    background-image: url('../images/buttonhome.png');
+  }
+  
+  #buttonright {
+    top: 2%;
+    right: 2%;
+    width: auto;
+    height: auto;
+    background-image: url('../images/buttondesignred.png');
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(164, 42, 4, 0.8);
+    color: #AFE1AF;
+    padding: 2%; /* Adjust padding for responsiveness */
+    width: 50%; /* Adjust width for responsiveness */
+    height: auto;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em; /* Set the desired font size for all text elements */
+}
+
+.text-overlay h1 {
+    font-size: 2em; /* Adjust font size for h1 element */
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}

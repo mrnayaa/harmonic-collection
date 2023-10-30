@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    width: 100%;
+    height: 100%;
+    text-decoration: white; 
+    color: white; 
+  }
+  
+  .text-overlay-container:hover h1 
+  nav 
+  p {
+    width: 100%;
+    height: 100%;
+    text-decoration: underline; 
+    transform: scale(1.2); 
+  }
+  
+  #background-container {
+    background-color: white; 
+    background-position: relative;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  
+  #my-image {
+    width: 1440px;
+    height: auto; 
+    margin-top: 0px; 
+    margin-left: 0%; 
+    background-repeat: repeat;
+  }
+  
+  .text-overlay-container h1 {
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: 	red; 
+    padding: 5px; 
+    width: 800px;
+    height: 400px;
+    transition: transform 0.3s;
+  }
+  
+  .text-overlay-container h1 {
+    font-size: 60px;
+    margin: 5px;
+    font-family: 'Cinzel Decorative', bold;
+    line-height: 2;
+    letter-spacing: 2;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  
+  .text-overlay-container nav{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: 	white; 
+    padding: 5px; 
+    width: 200px;
+    height: 400px;
+    font-size: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .overlay-text p 
+  {
+    font-size: 30px;
+    color: white;
+    margin: 30px;
+    margin-bottom: 20%;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 2;
+    letter-spacing: 2;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  

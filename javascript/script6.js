@@ -1,17 +1,40 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Get a reference to the scroll button
-    const scrollButton = document.getElementById("scrollButton");
+const rectangles = document.querySelectorAll('.rectangle');
+const textContainer = document.querySelector('.center-text-container');
+const overlay = document.querySelector('.overlay');
 
-    // Define the target position (1000px from the top)
-    const targetPosition = 1000;
-
-    // Add a click event listener to the button
-    scrollButton.addEventListener("click", function() {
-        // Use the smooth scrolling behavior
-        window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth"
-        });
+rectangles.forEach((rectangle, index) => {
+    rectangle.addEventListener('click', () => {
+        if (textContainer.style.display === 'block') {
+            textContainer.style.display = 'none';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Fully transparent
+        } else {
+            const text = rectangle.querySelector('p').textContent;
+            textContainer.textContent = text;
+            textContainer.style.display = 'block';
+            overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)'; // Semi-transparent black
+        }
     });
 });
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

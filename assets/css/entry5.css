@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/nycthree.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 3% 3%; /* Adjust padding for responsiveness */
+  color: #fff;
+  width: auto; /* Let the content determine the width */
+  height: auto; /* Let the content determine the height */
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(0, 0);
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+}
+
+#buttonleft {
+  top: 2%;
+  left: 2%;
+  width: auto; /* Adjust width for responsiveness */
+  height: auto; /* Adjust height for responsiveness */
+  background-image: url('../images/buttonhome.png');
+}
+
+#buttonright {
+  top: 2%;
+  right: 2%;
+  width: auto; /* Adjust width for responsiveness */
+  height: auto; /* Adjust height for responsiveness */
+  background-image: url('../images/buttondesignred.png');
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.content-container {
+  padding: 4%;
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 5% 5%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(0);
+}
+
+.image {
+  width: 20%; /* Use percentage-based width */
+  max-width: 40%; /* Add max-width to prevent images from overflowing */
+  height: auto; /* Use auto for responsive height */
+  position: relative;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+
