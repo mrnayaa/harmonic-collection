@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/ambience.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-image: url('../images/techno.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
     background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
     background-repeat: repeat;
     background-attachment: fixed;
@@ -29,7 +29,7 @@ body {
     left: 2%;
     width: auto; /* Adjust width for responsiveness */
     height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttonhomeblack.png');
+    background-image: url('../images/buttonhome.png');
   }
   
   #buttonright {
@@ -37,91 +37,10 @@ body {
     right: 2%;
     width: auto; /* Adjust width for responsiveness */
     height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttondesignblack.png');
+    background-image: url('../images/buttondesignred.png');
   }
   
   .button:hover {
     transform: scale(1.1);
   }
-
-#a {
-    color: #D2042D;
-    text-decoration: none;
-    transition: transform 0.3s ease; 
-  }
-
-a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    transform: scale(1.2);
-  }
-
-#background-container {
-    background-color: #a42a04; 
-    background-position: relative;
-    background-size: cover;
-}
-
-#my-image {
-    width: 1440px;
-    height: auto; 
-    margin-top: 0px; 
-    margin-left: 0px; 
-}
-
-.image {
-    width: 500px;
-    height: 800px;
-    object-fit: cover;
-    position: absolute;
-    top: 0%;
-    left: 10%;
-}
-
-.text-overlay-container {
-    position: absolute;
-    top: 40%; 
-    left: 70%; 
-    transform: translate(-50%, -50%);
-    color: 	#880808; 
-    padding: 0px;
-    text-align: left; 
-    width: 400px;
-    height: 300px
-
-}
-
-.text-overlay-container p {
-    font-size: 24px;
-    margin: 5px;
-    font-family: 'Libre Baskerville', serif;
-    line-height: 2;
-    letter-spacing: 2;
-}
-
-.text-overlay-container ol {
-    font-size: 24px;
-    margin: 5px;
-    font-family: 'Libre Baskerville', serif;
-    line-height: 2;
-    letter-spacing: 2;
-}
-
-.text-overlay-container li {
-    font-size: 24px;
-    margin: 5px;
-    font-family: 'Libre Baskerville', serif;
-    line-height: 2;
-    letter-spacing: 2;
-}
-
-#homepage
-{
-    text-decoration: rgb(164, 42, 4); 
-    color: rgb(164, 42, 4); 
-}
-#homepage:hover {
-    text-decoration: underline; 
-    font-weight: bold;
-}
 

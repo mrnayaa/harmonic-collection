@@ -1,15 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-  }
-
-a {
-    text-decoration: rgb(164, 42, 4); 
-    color: rgb(164, 42, 4); 
-  }
-
-  a:hover {
-    text-decoration: underline; 
+    background-image: url('../images/masterandmargarita.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
+    background-repeat: repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
   }
 
   .button {
@@ -34,7 +31,7 @@ a {
     left: 2%;
     width: auto; /* Adjust width for responsiveness */
     height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttonhomeblack.png');
+    background-image: url('../images/buttonhome.png');
   }
   
   #buttonright {
@@ -42,163 +39,59 @@ a {
     right: 2%;
     width: auto; /* Adjust width for responsiveness */
     height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttondesignblack.png');
+    background-image: url('../images/buttondesignred.png');
   }
   
   .button:hover {
     transform: scale(1.1);
   }
 
-  #container4 {
-    width: 1440px; /* Set the container's width */
-    height: 500px; /* Set the container's height */
-    background-color: rgb(164, 42, 4); /* Set a background color for the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 2 / 2 / 5 / 5; }
 
-#image8 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/redbackground.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: 0%;
-    top: 0%;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
+    .div1 img {
+        width: 100%;
+        height: auto;
+    }
 
-#image8:hover {
-    background-image: url('../images/masterandmargaritatext.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
+    .div2 { grid-area: 6 / 2 / 11 / 4; }
 
-  #container1 {
-    width: 1440px; /* Set the container's width */
-    height: 500px; /* Set the container's height */
-    background-color: rgb(164, 42, 4); /* Set a background color for the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .div2 img {
+        width: 100%;
+        height: auto;
+    }
 
-#image1 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/blackcat.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: 2%;
-    top: 2%;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
+    .div3 { grid-area: 6 / 10 / 11 / 12; }
 
-#image2 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/yellowflowers.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: 50%;
-    top: 0%;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
+    .div3 img {
+        width: 100%;
+        height: auto;
+    }
 
-#image1:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
+    .div4 { grid-area: 8 / 5 / 11 / 8; }
 
-#image2:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
+    .div4 img {
+        width: 100%;
+        height: auto;
+    }
 
-#container2 {
-    width: 1440px; /* Set the container's width */
-    height: 900px; /* Set the container's height */
-    background-color: rgb(164, 42, 4); /* Set a background color for the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .div5 { grid-area: 2 / 6 / 7 / 8; }
 
-#image3 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/blackmirror.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
+    .div5 img {
+        width: 100%;
+        height: auto;
+    }
 
-#image4 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/candle.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
+    .div6 { grid-area: 2 / 9 / 5 / 12; }
 
-#image5 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/wine.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
-
-#image3:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
-
-#image4:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
-
-#image5:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
-
-#container3 {
-    width: 1440px; /* Set the container's width */
-    height: 500px; /* Set the container's height */
-    background-color: rgb(164, 42, 4); /* Set a background color for the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#image6 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/butter.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
-
-#image7 {
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/knife.png'); /* Default image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease; /* Smooth transition for image change */
-}
-
-#image6:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
-
-#image7:hover {
-    background-image: url('../images/redbackground.png'); /* Image to display on hover */
-    cursor: pointer; /* Change cursor to a pointer on hover */
-}
+    .div6 img {
+        width: 100%;
+        height: auto;
+    }

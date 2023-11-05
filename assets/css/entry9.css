@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/nyctwo.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.button {
+    display: inline-block;
+    padding: 3% 3%; /* Adjust padding for responsiveness */
+    color: #fff;
+    width: auto; /* Let the content determine the width */
+    height: auto; /* Let the content determine the height */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(0, 0);
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+  }
+  
+  #buttonleft {
+    top: 2%;
+    left: 2%;
+    width: auto; /* Adjust width for responsiveness */
+    height: auto; /* Adjust height for responsiveness */
+    background-image: url('../images/buttonhomeblack.png');
+  }
+  
+  #buttonright {
+    top: 2%;
+    right: 2%;
+    width: auto; /* Adjust width for responsiveness */
+    height: auto; /* Adjust height for responsiveness */
+    background-image: url('../images/buttondesignblack.png');
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+
+  #image-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+#slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#image-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    transition: transform 1s ease; /* Animation duration and easing */
+}
+
+#image-list li {
+    flex: 0 0 100%;
+    display: inline-block;
+}
+
+#toggle-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    transition: opacity 0.5s; /* Button fade-in duration */
+}
+
+#random-image {
+    display: none;
+}

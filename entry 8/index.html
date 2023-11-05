@@ -15,14 +15,26 @@
 
 
      <title>composition</title>
-     <link href="../assets/css/main.css" rel="stylesheet">
+     <link href="../assets/css/entry8.css" rel="stylesheet">
    </head>
     
      <body>
-            <div id="foo" class="ball"></div>
-
-    </div>
-    <script src="../javascript/script8.js"></script>
-
-</body>
-</html>
+        <a href="../homepage/index.html" class="button button-left" id="buttonleft"></a>
+        <a href="../entry 4/index.html" class="button button-right" id="buttonright"></a>
+        <div id="foo" class="ball"></div>
+        <div class="parent">
+            <div class="div1"> 
+                <p>text description goes here</p>
+            </div>
+            <div class="div2"> <!-- Note: Added id="spotify-button" for targeting -->
+                <img src="../assets/images/carpet.gif">
+                <div id="outline-container" class="outline"></div>
+             </div>
+          </div>
+          <script src="../javascript/script8.js"></script>
+          <!-- Corrected iframe src with Playlist ID -->
+          <div class="playlist-container">
+            <iframe src="https://open.spotify.com/embed/playlist/6RfD5x6rCpMjW1huT2gwau" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+         </div>
+       </body>
+       </html>

@@ -10,42 +10,42 @@ body {
   }
 
 
-  .button {
-    display: inline-block;
-    padding: 3% 3%; /* Adjust padding for responsiveness */
-    color: #fff;
-    width: auto; /* Let the content determine the width */
-    height: auto; /* Let the content determine the height */
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    transform: translate(0, 0);
-    z-index: 1;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s;
-  }
-  
-  #buttonleft {
-    top: 2%;
-    left: 2%;
-    width: auto; /* Adjust width for responsiveness */
-    height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttonhome.png');
-  }
-  
-  #buttonright {
-    top: 2%;
-    right: 2%;
-    width: auto; /* Adjust width for responsiveness */
-    height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttondesignred.png');
-  }
-  
-  .button:hover {
-    transform: scale(1.1);
-  }
+.button {
+  display: inline-block;
+  padding: 3% 3%; /* Adjust padding for responsiveness */
+  color: #fff;
+  width: auto; /* Let the content determine the width */
+  height: auto; /* Let the content determine the height */
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(0, 0);
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+}
+
+#buttonleft {
+  top: 2%;
+  left: 2%;
+  width: auto; /* Adjust width for responsiveness */
+  height: auto; /* Adjust height for responsiveness */
+  background-image: url('../images/buttonhome.png');
+}
+
+#buttonright {
+  top: 2%;
+  right: 2%;
+  width: auto; /* Adjust width for responsiveness */
+  height: auto; /* Adjust height for responsiveness */
+  background-image: url('../images/buttondesignred.png');
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
 
 
 
