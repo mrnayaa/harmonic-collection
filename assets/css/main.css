@@ -55,12 +55,12 @@ body {
   display: flex;
   position: absolute;
   width: 80%;
-  height: 50%;
+  height: 80%;
   flex-wrap: wrap;
-  column-gap: 20%;
+  column-gap: 40%;
   align-content: center;
   justify-content: center;
-  gap: 30%;
+  gap: 35%;
   top: 150%; /* Adjust top position to place the images lower */
   left: 40%;
   transform: translate(-50%, -50%);
@@ -97,7 +97,8 @@ body {
 #twinpeaks,
 #nyc,
 #childhood,
-#autumn {
+#autumn 
+#techno {
   position: relative;
   overflow: hidden;
   width: 50%; /* Increase the percentage-based width for individual items */
