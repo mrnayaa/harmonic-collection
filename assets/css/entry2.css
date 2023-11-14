@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('../images/twinpeaksmountains.png'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
+    background-repeat: repeat;
+    background-attachment: fixed;
   }
 
   .button {

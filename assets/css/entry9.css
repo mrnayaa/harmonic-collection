@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/nyctwo.gif'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-image: url('../images/redpaper.png'); /* Replace 'your-background.gif' with the actual path to your GIF */
     background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
     background-repeat: repeat;
     background-attachment: fixed;
@@ -44,38 +44,91 @@ body {
     transform: scale(1.1);
   }
 
-  #image-gallery {
-    text-align: center;
-    padding: 20px;
-}
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
+    }
+    
+    .div1 { grid-area: 8 / 1 / 11 / 5; 
+        
+    }
 
-#slideshow-container {
-    position: relative;
+    .div1 img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+        border: 5px solid darkgreen;
+        filter: grayscale(100%);
+    }
+
+    .div2 { grid-area: 3 / 4 / 9 / 7; }
+
+    .div2 img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+        border: 5px solid darkgreen;
+        filter: grayscale(100%);
+    }
+
+    .div3 { grid-area: 1 / 4 / 4 / 6; }
+
+    .div3 img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+        border: 5px solid darkgreen;
+        filter: grayscale(100%);
+    }
+
+    .div4 { grid-area: 3 / 1 / 8 / 4; }
+
+    .div4 img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+        border: 5px solid darkgreen;
+        filter: grayscale(100%);
+    }
+
+.div5 { grid-area: 8 / 6 / 11 / 10; }
+
+.div5 img {
     width: 100%;
-    max-width: 600px; /* Adjust the width as needed */
-    margin: 0 auto;
-    overflow: hidden;
+    height: auto;
+    transition: all 0.3s ease;
+    border: 5px solid darkgreen;
+    filter: grayscale(100%);
 }
 
-#image-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    transition: transform 1s ease; /* Animation duration and easing */
+.div6 { grid-area: 2 / 6 / 6 / 9; }
+
+.div6 img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    border: 5px solid darkgreen;
+    filter: grayscale(100%);
+}
+.div7 { grid-area: 1 / 8 / 4 / 10; }
+
+.div7 img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    border: 5px solid darkgreen;
+    filter: grayscale(100%);
 }
 
-#image-list li {
-    flex: 0 0 100%;
-    display: inline-block;
-}
+.div8 { grid-area: 4 / 9 / 8 / 12; }
 
-#toggle-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    transition: opacity 0.5s; /* Button fade-in duration */
-}
-
-#random-image {
-    display: none;
+.div8 img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    border: 5px solid darkgreen;
+    filter: grayscale(100%);
 }

@@ -54,13 +54,12 @@ body {
 .image-container {
   display: flex;
   position: absolute;
-  width: 80%;
+  width: 60%;
   height: 80%;
   flex-wrap: wrap;
-  column-gap: 40%;
   align-content: center;
   justify-content: center;
-  gap: 35%;
+  gap: 32%;
   top: 150%; /* Adjust top position to place the images lower */
   left: 40%;
   transform: translate(-50%, -50%);
@@ -71,7 +70,7 @@ body {
 }
 
 .image {
-  width: 50%; /* Increase the percentage-based width for larger size */
+  width: 70%; /* Increase the percentage-based width for larger size */
   max-width: 100%; /* Add a max-width to prevent images from getting too large */
   height: auto;
   position: absolute;
@@ -80,10 +79,10 @@ body {
 
 @keyframes rotate {
   0% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
   100% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
 }
 
@@ -97,8 +96,10 @@ body {
 #twinpeaks,
 #nyc,
 #childhood,
-#autumn 
-#techno {
+#autumn,
+#techno,
+#newyear,
+#queensgambit {
   position: relative;
   overflow: hidden;
   width: 50%; /* Increase the percentage-based width for individual items */
