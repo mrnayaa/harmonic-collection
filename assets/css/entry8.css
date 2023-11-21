@@ -1,10 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/blackandwhitefilm.png'); /* Replace 'your-background.gif' with the actual path to your GIF */
-    background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-image: 
+    /* First background image */
+    url('../images/blackandwhitefilm.png'), 
+    /* Second background image */
+    url('../images/blackandwhitefilm.png');
+  /* Set background properties for each image */
+  background-size: cover, 100% 100%; /* Adjust sizes as needed */
+  background-repeat: no-repeat, repeat; /* Set repeat properties */
+  background-attachment: fixed, fixed; /* Set attachment properties */
+  /* Ensure the first image is placed on top */
+  background-position: center, center; /* Adjust positions as needed */
   }
 
   .button {

@@ -1,10 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-image: url('../images/queensgambitbackground.png'); /* Replace 'your-background.gif' with the actual path to your GIF */
+        background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
+        background-repeat: repeat;
+        background-attachment: fixed;
+        justify-content: center;
+        align-items: center;
   }
 
   .button {
@@ -44,14 +46,28 @@ body {
     transform: scale(1.1);
   }
 
-  div {
-    width: 300px;
-    height: 150px;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 100px); /* Adjust the width as needed */
+    grid-template-rows: repeat(8, 100px); /* Adjust the height as needed */
+    gap: 2px;
+    justify-content: center;
+     /* Adjust the gap between squares */
   }
   
-  .layered-image {
-    background: linear-gradient(to right, transparent, mistyrose),
-      url("../images/abrikos.png");
+  .square {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    cursor: pointer;
   }
   
+  .square:nth-child(even) {
+    background-color: #ffffff; /* Light color */
+  }
   
+  .square:nth-child(odd) {
+    background-color: #000000; /* Dark color */
+  }
+  
+ 

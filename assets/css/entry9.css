@@ -44,6 +44,17 @@ body {
     transform: scale(1.1);
   }
 
+  .ball {
+    border-radius: 50%; /* Make it a perfect circle */
+    width: 3%; /* Adjust the width percentage for responsiveness */
+    padding-top: 3%; /* Maintain a 1:1 aspect ratio */
+    background: darkolivegreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+}
+
   .parent {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
@@ -52,7 +63,8 @@ body {
     grid-row-gap: 0%;
     }
     
-    .div1 { grid-area: 8 / 1 / 11 / 5; 
+    .div1 { grid-area: 8 / 1 / 11 / 5;
+        align-self: start; 
         
     }
 
