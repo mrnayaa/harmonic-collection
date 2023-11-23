@@ -144,3 +144,34 @@ body {
     border: 5px solid darkgreen;
     filter: grayscale(100%);
 }
+
+.slider-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px; /* Adjust the distance from the right side */
+    width: 5px; /* Adjust the width of the slider */
+    margin: auto;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    writing-mode: bt-lr; /* Bottom to top, left to right */
+    transform: rotate(180deg); /* Rotate the slider vertically */
+    background: transparent;
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px; /* Adjust the width of the slider thumb */
+    height: 100%;
+    border-radius: 0;
+    background: darkolivegreen;
+    cursor: ew-resize;
+    transition: background-color 0.3s ease-in-out;
+  }

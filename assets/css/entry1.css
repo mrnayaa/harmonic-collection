@@ -68,3 +68,15 @@ body {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
 }
+
+@media (max-width: 768px) {
+    .text-overlay {
+        padding: 5%; /* Adjust padding for mobile */
+        width: 85%; /* Adjust width for mobile */
+        font-size: 0.8em; /* Adjust font size for mobile */
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5em; /* Adjust font size for h1 element on mobile */
+    }
+}

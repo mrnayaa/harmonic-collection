@@ -141,6 +141,23 @@ body {
   animation: fadeInOut 5s ease infinite;
 }
 
+@media (max-width: 768px) {
+  .text-overlay {
+    top: 20%; /* Adjust top position for mobile */
+    left: 50%; /* Center the text horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%; /* Adjust width for mobile */
+    max-width: 100%; /* Set a maximum width for mobile */
+    text-align: center; /* Center align text */
+    font-size: 120%; /* Adjust font size for mobile */
+    line-height: 200%; /* Adjust line height for better readability */
+  }
+
+  .fade-text {
+    font-size: 100%; /* Adjust font size for mobile */
+  }
+}
+
 @keyframes fadeInOut {
   0% {
     opacity: 0;

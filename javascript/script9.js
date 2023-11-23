@@ -8,5 +8,16 @@ document.addEventListener(
   false
 );
 
+const slider = document.getElementById('blur-slider');
+const images = document.querySelectorAll('.parent img');
 
-
+slider.addEventListener('input', function() {
+  const blurValue = this.value / 10; // Adjust the blur scale according to your preference
+  images.forEach(img => {
+    if (img.getBoundingClientRect().x <= slider.getBoundingClientRect().x + slider.offsetWidth) {
+      img.style.filter = `blur(${blurValue}px) grayscale(100%)`;
+    } else {
+      img.style.filter = 'none';
+    }
+  });
+});

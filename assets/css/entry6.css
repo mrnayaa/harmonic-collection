@@ -145,6 +145,16 @@ body {
     display: inline-block;
 }
 
+@media (max-width: 768px) {
+    .text-glitch-container {
+        top: 10%; /* Adjust top position for mobile */
+    }
+
+    .text-glitch {
+        font-size: 35px; /* Adjust font size for mobile */
+    }
+}
+
 @keyframes glitchAnimation {
     0% {
         transform: rotate(0deg) translateX(0);

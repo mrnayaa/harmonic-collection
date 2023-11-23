@@ -68,8 +68,8 @@ body {
 }
 
 .image {
-  width: 20%; /* Use percentage-based width */
-  max-width: 40%; /* Add max-width to prevent images from overflowing */
+  width: 25%; /* Use percentage-based width */
+  max-width: 100%; /* Add max-width to prevent images from overflowing */
   height: auto; /* Use auto for responsive height */
   position: relative;
   margin-bottom: 0%;
