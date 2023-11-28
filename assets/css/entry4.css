@@ -46,86 +46,64 @@ body {
     transform: scale(1.1);
   }
 
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    transition: filter 0.3s ease;
-    }
-    
-    .div1 { grid-area: 2 / 2 / 5 / 5; }
+  .text-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
 
-    .div1 img {
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
-    }
+.text {
+    font-size: 48px;
+    color: #a42a04;
+    font-family: 'Libre Baskerville', serif;
+    position: relative;
+    opacity: 1;
+    transition: color 0.5s;
+}
 
-    .div2 { grid-area: 6 / 2 / 11 / 4; }
+.text:hover {
+    color: goldenrod;
+}
 
-    .div2 img {
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
-    }
-
-    .div3 { grid-area: 6 / 10 / 11 / 12; }
-
-    .div3 img {
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
+@media (max-width: 768px) {
+    .text-container {
+        top: 10%; /* Adjust top position for mobile */
     }
 
-    .div4 { grid-area: 8 / 5 / 11 / 8; }
+    .text {
+        font-size: 35px; /* Adjust font size for mobile */
+    }
+}
 
-    .div4 img {
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
-    }
 
-    .div5 { grid-area: 2 / 6 / 7 / 8; }
-
-    .div5 img {
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
-    }
-
-    .div6 { grid-area: 2 / 9 / 5 / 12; }
-
-    .div6 img {
-        width: 100%;
-        height: auto;
-        transition: all 0.3s ease;
-    }
-
-    .div1:hover img {
-        filter: hue-rotate(180deg);
-    }
-    
-    .div2:hover img {
-        filter: hue-rotate(180deg);
-    }
-    
-    .div3:hover img {
-        filter: hue-rotate(180deg);
-    }
-    
-    .div4:hover img {
-        filter: hue-rotate(180deg);
-    }
-    
-    .div5:hover img {
-        filter: hue-rotate(180deg);
-    }
-    
-    .div6:hover img {
-        filter: hue-rotate(180deg);
-    }
-    
-    
-    
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Positions the container behind the text */
+    margin-top: 150px; /* Adjust the distance from the top of the page */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow rows to wrap on smaller screens */
+    justify-content: space-around;
+    margin-bottom: 20px; /* Adjust spacing between rows */
+  }
+  
+  /* Rectangle styles */
+  .rectangle {
+    width: calc(50% - 20px); /* Adjust the width of the rectangles for mobile (50% width with margins) */
+    max-width: 300px; /* Set a maximum width for smaller screens */
+    margin: 10px; /* Adjust spacing between rectangles */
+    overflow: hidden;
+  }
+  
+  .rectangle img {
+    width: 100%;
+    height: auto;
+  }
+  

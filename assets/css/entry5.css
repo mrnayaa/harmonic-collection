@@ -82,4 +82,11 @@ body {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .image {
+    width: 40%; /* Adjust width for mobile */
+    margin-bottom: 5%; /* Adjust margin for mobile */
+    margin-top: 5%; /* Adjust margin for mobile */
+  }
+}
 

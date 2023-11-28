@@ -349,6 +349,15 @@ body {
     }
 }
 
+@keyframes rotate15 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
 .rectangle:nth-child(1) img {
     animation: rotate1 4s ease infinite;
 }
@@ -405,6 +414,10 @@ body {
     animation: rotate14 4s ease infinite;
 }
 
+.rectangle:nth-child(15) img {
+    animation: rotate15 4s ease infinite;
+}
+
 .rectangle:nth-child(1):hover img {
     animation: rotate1 1s ease infinite;
 }
@@ -459,6 +472,10 @@ body {
 
 .rectangle:nth-child(14):hover img {
     animation: rotate14 1s ease infinite;
+}
+
+.rectangle:nth-child(15):hover img {
+    animation: rotate15 1s ease infinite;
 }
 
 
