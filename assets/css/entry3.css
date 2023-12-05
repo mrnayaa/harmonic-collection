@@ -41,27 +41,97 @@ body {
   transform: scale(1.1);
 }
 
-  .container {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .grid {
+.ball {
+    border-radius: 50%; /* Make it a perfect circle */
+    width: 3%; /* Adjust the width percentage for responsiveness */
+    padding-top: 3%; /* Maintain a 1:1 aspect ratio */
+    background: rgb(164, 42, 4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s;
+}
+
+
+  .parent {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
   }
   
-  .grid-item {
-    width: 120px; /* Set the width of each rectangle */
-    height: 1200px; /* Set the height of each rectangle */
+  .div1 {
+    grid-area: 2 / 2 / 4 / 4;
+  }
+  
+  .div1 p {
+    color: rgb(164, 42, 4);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+  }
+  
+  .div2 {
+    grid-area: 3 / 6 / 4 / 7;
+    width: 100%; /* Set the width to 100% */
+    height: 0;
+    padding-bottom: 100%; /* Create a square aspect ratio, you can adjust the percentage as needed */
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%; /* Make the div a circle */
+    clip-path: circle(50% at 50% 50%);
+    transition: clip-path 0.5s; /* Create a circular clipping mask */
+  }
+
+  
+
+  .div2:hover {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .div2 img {
+    width: 100%; /* Ensure the image takes up the entire div */
+    height: auto; /* Allow the image's height to adjust while preserving its aspect ratio */
+    object-fit: contain; /* Preserve the image aspect ratio within the circle */
+  }
+
+  .div3 {
+    grid-area: 4 / 6 / 5 / 7;  /* Define grid placement for div3 */
+    display: none; /* Hide div3 by default */
+  }
+  
+  .text-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .hidden-text p {
+    background-color: rgb(164, 42, 4);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    color: #AFE1AF;
+    padding: 3%;
+    line-height: 1.5;
+  }
+  
+  .div2:hover + .div3 {
+    display: block; /* Display div3 when div2 is hovered over */
+    position: absolute;
+    bottom: 10%; /* Adjust position to show below div2 */
+    left: 25%;
+    right: 25%; /* Center the text container */
+  }
+  
+
+  .playlist-container {
     display: flex;
+    top: 20%;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-  }
-  
-  .grid-item img {
-    max-width: 100%;
-    max-height: 100%;
-  }
+    height: 100vh; 
+    width: 100%; /* Adjust as needed */
+ }
+
