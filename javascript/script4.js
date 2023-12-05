@@ -50,3 +50,41 @@ function changeImage() {
 
 // Start animation
 changeImage();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const overlay = document.getElementById('overlay');
+    const popup = document.getElementById('popup');
+    const rectangles = document.querySelectorAll('.rectangle');
+    const embeddedText = document.querySelector('.embedded-text'); // Added this line
+
+    let isBlackAndWhite = false;
+
+    rectangles.forEach(rectangle => {
+        rectangle.addEventListener('click', function() {
+            if (popup.style.display === 'block') {
+                popup.style.display = 'none';
+                overlay.style.display = 'none';
+                document.body.style.filter = 'brightness(100%) grayscale(0)';
+                isBlackAndWhite = false;
+                embeddedText.style.display = 'none'; // Hide the embedded text when closing the popup
+            } else {
+                popup.style.display = 'block';
+                overlay.style.display = 'block';
+                if (!isBlackAndWhite) {
+                    document.body.style.filter = 'brightness(50%) grayscale(100%)';
+                    isBlackAndWhite = true;
+                }
+                embeddedText.style.display = 'block'; // Show the embedded text when opening the popup
+            }
+        });
+    });
+
+    popup.addEventListener('click', function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+        document.body.style.filter = 'brightness(100%) grayscale(0)';
+        isBlackAndWhite = false;
+        embeddedText.style.display = 'none'; // Hide the embedded text when closing the popup
+    });
+});

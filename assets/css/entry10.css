@@ -9,18 +9,16 @@ body {
         align-items: center;
   }
 
-  .button {
-    display: inline-block;
-    padding: 3% 3%; /* Adjust padding for responsiveness */
+  #buttonleft,
+  #buttonright {
+    position: fixed;
+    padding: 3%;
     color: #fff;
     width: auto;
     height: auto;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    position: absolute;
-    transform: translate(0, 0);
-    z-index: 1;
     background-size: cover;
     background-position: center;
     transition: transform 0.3s;
@@ -29,20 +27,17 @@ body {
   #buttonleft {
     top: 2%;
     left: 2%;
-    width: auto;
-    height: auto;
     background-image: url('../images/buttonhome.png');
   }
   
   #buttonright {
     top: 2%;
     right: 2%;
-    width: auto;
-    height: auto;
     background-image: url('../images/buttondesignred.png');
   }
   
-  .button:hover {
+  #buttonleft:hover,
+  #buttonright:hover {
     transform: scale(1.1);
   }
 

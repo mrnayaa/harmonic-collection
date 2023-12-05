@@ -11,3 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+const divs = document.querySelectorAll('.parent > div');
+
+divs.forEach((div) => {
+    const image = div.querySelector('.image');
+    const textContainer = div.querySelector('.text-container');
+
+    div.addEventListener('click', () => {
+        // Toggle blur effect for the clicked div's image
+        image.classList.toggle('blur');
+
+        // Toggle text container visibility
+        textContainer.classList.toggle('show');
+    });
+});

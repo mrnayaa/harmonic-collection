@@ -118,6 +118,25 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 768px) {
+  .image {
+    width: 65%; /* Increase the percentage-based width for mobile */
+  }
+
+  /* Adjust sizes for individual items if necessary */
+  #masterandmargarita,
+  #about,
+  #ambience,
+  #twinpeaks,
+  #nyc,
+  #childhood,
+  #autumn,
+  #techno,
+  #newyear,
+  #queensgambit {
+    width: 65%; /* Adjust percentage-based width for individual items */
+  }
+}
 
 .text-overlay {
   position: absolute;

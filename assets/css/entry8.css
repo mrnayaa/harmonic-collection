@@ -14,18 +14,16 @@ body {
   background-position: center, center; /* Adjust positions as needed */
   }
 
-  .button {
-    display: inline-block;
-    padding: 3% 3%; /* Adjust padding for responsiveness */
+  #buttonleft,
+  #buttonright {
+    position: fixed;
+    padding: 3%;
     color: #fff;
-    width: auto; /* Let the content determine the width */
-    height: auto; /* Let the content determine the height */
+    width: auto;
+    height: auto;
     text-decoration: none;
     border: none;
     cursor: pointer;
-    position: absolute;
-    transform: translate(0, 0);
-    z-index: 1;
     background-size: cover;
     background-position: center;
     transition: transform 0.3s;
@@ -34,20 +32,17 @@ body {
   #buttonleft {
     top: 2%;
     left: 2%;
-    width: auto; /* Adjust width for responsiveness */
-    height: auto; /* Adjust height for responsiveness */
     background-image: url('../images/buttonhome.png');
   }
   
   #buttonright {
     top: 2%;
     right: 2%;
-    width: auto; /* Adjust width for responsiveness */
-    height: auto; /* Adjust height for responsiveness */
     background-image: url('../images/buttondesignred.png');
   }
   
-  .button:hover {
+  #buttonleft:hover,
+  #buttonright:hover {
     transform: scale(1.1);
   }
 
@@ -93,6 +88,8 @@ body {
     transition: clip-path 0.5s; /* Create a circular clipping mask */
   }
 
+  
+
   .div2:hover {
     clip-path: polygon(50% 100%, 0 0, 100% 0);
     border-radius: 0;
@@ -105,8 +102,38 @@ body {
     object-fit: contain; /* Preserve the image aspect ratio within the circle */
   }
 
+  .div3 {
+    grid-area: 4 / 6 / 5 / 7;  /* Define grid placement for div3 */
+    display: none; /* Hide div3 by default */
+  }
+  
+  .text-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .hidden-text p {
+    background-color: rgb(164, 42, 4);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    color: #AFE1AF;
+    padding: 3%;
+    line-height: 1.5;
+  }
+  
+  .div2:hover + .div3 {
+    display: block; /* Display div3 when div2 is hovered over */
+    position: absolute;
+    bottom: 10%; /* Adjust position to show below div2 */
+    left: 25%;
+    right: 25%; /* Center the text container */
+  }
+  
+
   .playlist-container {
     display: flex;
+    top: 20%;
     justify-content: center;
     align-items: center;
     height: 100vh; 

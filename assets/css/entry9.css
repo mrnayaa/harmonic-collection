@@ -1,177 +1,223 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/redpaper.png'); /* Replace 'your-background.gif' with the actual path to your GIF */
+    background-image: url('../images/newyearsbackground.png'); /* Replace 'your-background.gif' with the actual path to your GIF */
     background-size: 100% 100%; /* Use 100% for both width and height to fill the entire page */
     background-repeat: repeat;
     background-attachment: fixed;
 }
 
-.button {
-    display: inline-block;
-    padding: 3% 3%; /* Adjust padding for responsiveness */
-    color: #fff;
-    width: auto; /* Let the content determine the width */
-    height: auto; /* Let the content determine the height */
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    transform: translate(0, 0);
-    z-index: 1;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s;
-  }
-  
-  #buttonleft {
-    top: 2%;
-    left: 2%;
-    width: auto; /* Adjust width for responsiveness */
-    height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttonhomeblack.png');
-  }
-  
-  #buttonright {
-    top: 2%;
-    right: 2%;
-    width: auto; /* Adjust width for responsiveness */
-    height: auto; /* Adjust height for responsiveness */
-    background-image: url('../images/buttondesignblack.png');
-  }
-  
-  .button:hover {
-    transform: scale(1.1);
-  }
-
-  .ball {
-    border-radius: 50%; /* Make it a perfect circle */
-    width: 3%; /* Adjust the width percentage for responsiveness */
-    padding-top: 3%; /* Maintain a 1:1 aspect ratio */
-    background: darkolivegreen;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 1s;
+#buttonleft,
+#buttonright {
+  position: fixed;
+  padding: 3%;
+  color: #fff;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
 }
+
+#buttonleft {
+  top: 2%;
+  left: 2%;
+  background-image: url('../images/buttonhome.png');
+}
+
+#buttonright {
+  top: 2%;
+  right: 2%;
+  background-image: url('../images/buttondesignred.png');
+}
+
+#buttonleft:hover,
+#buttonright:hover {
+  transform: scale(1.1);
+}
+
+
 
   .parent {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-    grid-column-gap: 0%;
-    grid-row-gap: 0%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
     }
     
-    .div1 { grid-area: 8 / 1 / 11 / 5;
-        align-self: start; 
-        
-    }
+    .div1 { grid-area: 2 / 1 / 6 / 5;
+        align-self: start;
+        position: relative; 
+     }
 
     .div1 img {
         width: 100%;
         height: auto;
-        transition: all 0.3s ease;
-        border: 5px solid darkgreen;
-        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
     }
 
-    .div2 { grid-area: 3 / 4 / 9 / 7; }
+    .div2 { grid-area:  1 / 2 / 4 / 5; 
+        align-self: start;
+        position: relative; 
+    }
 
     .div2 img {
         width: 100%;
         height: auto;
-        transition: all 0.3s ease;
-        border: 5px solid darkgreen;
-        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
     }
 
-    .div3 { grid-area: 1 / 4 / 4 / 6; }
+    .div3 { grid-area: 5 / 1 / 10 / 3;
+        align-self: start;
+        position: relative; 
+     }
 
-    .div3 img {
+     .div3 img {
         width: 100%;
         height: auto;
-        transition: all 0.3s ease;
-        border: 5px solid darkgreen;
-        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
     }
 
-    .div4 { grid-area: 3 / 1 / 8 / 4; }
+    .div4 { grid-area: 6 / 2 / 11 / 5;
+        align-self: start;
+        position: relative; 
+     }
 
-    .div4 img {
+     .div4 img {
         width: 100%;
         height: auto;
-        transition: all 0.3s ease;
-        border: 5px solid darkgreen;
-        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
     }
 
-.div5 { grid-area: 8 / 6 / 11 / 10; }
+    .div5 { grid-area: 4 / 3 / 7 / 6; 
+        align-self: start;
+        position: relative; 
+    }
 
-.div5 img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-    border: 5px solid darkgreen;
-    filter: grayscale(100%);
-}
+    .div5 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
 
-.div6 { grid-area: 2 / 6 / 6 / 9; }
+    .div6 { grid-area: 1 / 5 / 6 / 7; 
+        align-self: start;
+        position: relative; 
+    }
 
-.div6 img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-    border: 5px solid darkgreen;
-    filter: grayscale(100%);
-}
-.div7 { grid-area: 1 / 8 / 4 / 10; }
+    .div6 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
 
-.div7 img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-    border: 5px solid darkgreen;
-    filter: grayscale(100%);
-}
+    .div7 { grid-area: 6 / 4 / 11 / 7; 
+        align-self: start;
+        position: relative; 
+    }
 
-.div8 { grid-area: 4 / 9 / 8 / 12; }
+    .div7 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
 
-.div8 img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-    border: 5px solid darkgreen;
-    filter: grayscale(100%);
-}
+    .div8 { grid-area: 4 / 6 / 9 / 8; 
+        align-self: start;
+        position: relative; 
+    }
 
-.slider-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 10px; /* Adjust the distance from the right side */
-    width: 5px; /* Adjust the width of the slider */
-    margin: auto;
-  }
-  
-  .slider {
-    width: 100%;
-    height: 100%;
-    -webkit-appearance: none;
-    appearance: none;
-    writing-mode: bt-lr; /* Bottom to top, left to right */
-    transform: rotate(180deg); /* Rotate the slider vertically */
-    background: transparent;
-    outline: none;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px; /* Adjust the width of the slider thumb */
-    height: 100%;
-    border-radius: 0;
-    background: darkolivegreen;
-    cursor: ew-resize;
-    transition: background-color 0.3s ease-in-out;
-  }
+    .div8 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .div9 { grid-area: 8 / 7 / 11 / 10; 
+        align-self: start;
+        position: relative; 
+    }
+
+    .div9 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .div10 { grid-area: 1 / 7 / 6 / 10; 
+        align-self: start;
+        position: relative; 
+    }
+
+    .div10 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .div11 { grid-area: 5 / 8 / 8 / 11; 
+        align-self: start;
+        position: relative; 
+    }
+
+    .div11 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .div12 { grid-area: 1 / 9 / 5 / 12; 
+        align-self: start;
+        position: relative; 
+    }
+
+    .div12 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .div13 { grid-area: 2 / 11 / 8 / 13; 
+        align-self: start;
+        position: relative; 
+    }
+
+    .div13 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+    .div14 { grid-area: 8 / 9 / 11 / 13; 
+        align-self: start;
+        position: relative; 
+    }
+
+    .div14 img {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    }
+
+ 
+    
+    
+    
